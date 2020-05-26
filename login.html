@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $signup = $('#signup_btn');
+			var $login = $('#login_btn');
+		});
+	</script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+	<div class="container">
+		<div class="login-wrapper">
+			<div class="header">Login</div>
+			<form>
+				<div class="form-wrapper">
+
+					<input type="text" name="username" placeholder="username" class="input-item" required>
+
+					<input type="password" name="password" placeholder="password" class="input-item" required>
+
+					<button class="btn" id="login_btn">Login</button>
+				</div>
+
+				<div class="msg">
+					Don't have account? <a href="#" id="signup_btn">Sign up</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
