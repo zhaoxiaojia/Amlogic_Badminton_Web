@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27c3e266-40f8-43c5-a928-b35e1d1d65d6" name="Default Changelist" comment="login_html">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Amlogic_Badminton_Web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1cIVGZzvCp1AOYss5HK6cWy2wRt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Amlogic_Badminton_Web\js" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27c3e266-40f8-43c5-a928-b35e1d1d65d6" name="Default Changelist" comment="" />
+      <created>1590215999404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590215999404</updated>
+    </task>
+    <task id="LOCAL-00001" summary="&gt; login_html">
+      <created>1590492520665</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590492520665</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/Amlogic_Badminton_Web.iml&#10;#&#9;.idea/inspectionProfiles/Project_Default.xml" />
+    <MESSAGE value="login_html" />
+    <MESSAGE value="&gt; login_html" />
+    <option name="LAST_COMMIT_MESSAGE" value="&gt; login_html" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="842" y="382" key="#Notifications" timestamp="1590492763879">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="842" y="382" key="#Notifications/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590492763879" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590492241990">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590492241990" />
+    <state x="499" y="10" key="CommitChangelistDialog2" timestamp="1590566226942">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="499" y="10" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590566226942" />
+    <state x="499" y="10" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590492752123" />
+    <state x="785" y="417" key="Github.ShareDialog" timestamp="1590492903861">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="785" y="417" key="Github.ShareDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590492903861" />
+    <state x="2202" y="86" key="MergeDialog" timestamp="1590459149544">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2202" y="86" key="MergeDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1590459149544" />
+    <state x="2765" y="386" width="425" height="267" key="MultipleFileMergeDialog" timestamp="1590459150255">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2765" y="386" width="425" height="267" key="MultipleFileMergeDialog/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1590459150255" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1590492721421">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590492721421" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590492784188">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590492784188" />
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590547488442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590547488442" />
+    <state x="2673" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1590459044518" />
+    <state x="614" y="307" key="git4idea.merge.GitPullDialog" timestamp="1590492860548">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="307" key="git4idea.merge.GitPullDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590492860548" />
+    <state x="753" y="380" key="git4idea.rebase.GitRebaseDialog" timestamp="1590492886379">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="380" key="git4idea.rebase.GitRebaseDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1590492886379" />
+  </component>
+</project>

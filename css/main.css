@@ -2,34 +2,31 @@ body{
 	font-family: 'Open Sans Light';
 	font-size: 14px;
 	letter-spacing: .05em;
-/*	background: url(../images/body_bg.jpg) no-repeat;
-	top: -29px;
-	background-size: cover;*/
+	background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
 }
 /*页面顶部*/
 .header_con{
-	height: 29px;
-	background-color: #E3E3E3;
+	height: 49px;
 	border-bottom: 1px solid #ddd;
 }
 
 .header{
 	width: 1200px;
-	height: 29px;
+	height: 49px;
 	margin: 0 auto 0;
 }
 
 .welcome{
-	font-size: 12px;
-	color: #666;
-	line-height: 29px;
+	font-size: 24px;
+	color: #fff;
+	line-height: 49px;
 }
 
 .usr_info{
 	display: none;
-	font-size: 12px;
-	line-height: 29px;
-	color: #666;
+	font-size: 16px;
+	line-height: 49px;
+	color: #fff;
 }
 
 .usr_info em{
@@ -40,14 +37,14 @@ body{
 }
 .login_btns li{
 	float: left;
-	height: 29px;
+	height: 49px;
 }
 
 .login_btns a,.login_btns span{
 	display: block;
-	line-height: 29px;
-	font-size: 12px;
-	color: #666;
+	line-height: 49px;
+	font-size: 16px;
+	color: #fff;
 }
 
 .login_btns span{
@@ -59,7 +56,6 @@ body{
 	width: 1200px;
 	height: 50px;
 	margin:0 auto;
-	background-color:#000;
 }
 
 .main_bar li{
@@ -81,7 +77,15 @@ body{
 	top: 50px;
 	left: 20px;
 }
-
+.backhand_con{
+	display: inline-block;
+	width: 100px;
+	height: 200px;
+	overflow: hidden;
+	position: fixed;
+	top: 50px;
+	right: 20px;
+}
 @keyframes smash{
 	from{
 		left: 0px;
@@ -90,19 +94,32 @@ body{
 		left: -440px;
 	}
 }
-
+@keyframes backhand{
+	from{
+		left: 0px;
+	}
+	to{
+		left: -400px;
+	}
+}
 .smash_con img{
 	position: absolute;
 	left: 0;
 	top: 0;
 	animation: smash 1s steps(3) infinite;
 }
+.backhand_con img{
+	position: absolute;
+	right: 0;
+	top: 0;
+	animation: backhand 1.5s steps(4) infinite;
+}
 /*logo*/
 .center_con2{
 	width: 1200px;
-	height: 300px;
+	height: 400px;
 	margin: 0 auto;
-	background: url(../images/logo_bg.jpg) no-repeat center -180px;
+	background: url(../images/body_bg.jpg) no-repeat center -330px;
 	background-size: 100%;
 }
 
@@ -171,3 +188,20 @@ body{
 	background-color: #666;
 }
 
+
+/*置顶按钮*/
+.totop{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: fixed;
+	right: 20px;
+	bottom: 50px;
+	background-color: #000;
+	color: #fff;
+	font:bold 28px/60px 'Open Sans Light';
+	text-align: center;
+	cursor: pointer;
+	z-index: 10;
+	display: none;
+}

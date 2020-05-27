@@ -18,6 +18,17 @@
 				$usr_info.css('display','block');
 				$('#usr_info fl').val()==info.split('-')[0];
 			}
+			$('.totop').click(function(){
+				$('html,body').animate({'scrollTop':0});
+			});
+			$(window).scroll(function(){
+				var iNum = $(document).scrollTop();
+				if(iNum > 400){
+					$('.totop').fadeIn()
+				}else{
+					$('.totop').fadeOut()
+				}
+			});
 		});
 	</script>
 	<script type="text/javascript" src="js/slide.js"></script>
@@ -28,7 +39,7 @@
 	<!-- 页面顶部 -->
 	<div class="header_con">
 		<div class="header">
-			<div class="welcome fl">欢迎来到晶晨羽毛球协会</div>
+			<div class="welcome fl">欢迎来到晶晨羽毛球协会官网</div>
 			<div class="usr_con fr">
 				<ul class="login_btns fl">
 					<li><a href="login.html" id="login">登录</a></li>
@@ -44,6 +55,11 @@
 	<div class="smash_con">
 		<img src="images/smash.jpg">
 	</div>
+	<div class="backhand_con">
+		<img src="images/backhand.jpg">
+	</div>
+	<div class="totop">↑</div>
+	
 	<!-- 主菜单 -->
 	<div class="center_con">
 		<ul class="main_bar">
