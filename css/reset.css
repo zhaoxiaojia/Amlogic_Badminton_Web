@@ -12,6 +12,7 @@ ul{
 /*去掉默认的下划线*/
 a{
 	text-decoration: none;
+	color: #fff;
 }
 
 /*去除字体斜体效果*/

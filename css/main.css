@@ -4,6 +4,7 @@ body{
 	letter-spacing: .05em;
 	background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
 }
+
 /*页面顶部*/
 .header_con{
 	height: 49px;
@@ -74,17 +75,8 @@ body{
 	height: 180px;
 	overflow: hidden;
 	position: fixed;
-	top: 50px;
+	top: 70px;
 	left: 20px;
-}
-.backhand_con{
-	display: inline-block;
-	width: 100px;
-	height: 200px;
-	overflow: hidden;
-	position: fixed;
-	top: 50px;
-	right: 20px;
 }
 @keyframes smash{
 	from{
@@ -94,26 +86,14 @@ body{
 		left: -440px;
 	}
 }
-@keyframes backhand{
-	from{
-		left: 0px;
-	}
-	to{
-		left: -400px;
-	}
-}
+
 .smash_con img{
 	position: absolute;
 	left: 0;
 	top: 0;
 	animation: smash 1s steps(3) infinite;
 }
-.backhand_con img{
-	position: absolute;
-	right: 0;
-	top: 0;
-	animation: backhand 1.5s steps(4) infinite;
-}
+
 /*logo*/
 .center_con2{
 	width: 1200px;
@@ -126,7 +106,7 @@ body{
 /*幻灯片*/
 .center_con3{
 	width: 1200px;
-	height: 800px;
+	height: 675px;
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
@@ -185,17 +165,55 @@ body{
 	cursor: pointer;
 }
 .points .active{
-	background-color: #666;
+	background-color: #FEFC31;
 }
 
+/*网页内容*/
+.content{
+	width: 1200px;
+	height: 450px;
+	margin: 0 auto;
+}
 
+.content_list{
+	height: 450px;
+	/*弹性布局*/
+	display: flex;
+}
+
+.content_list .list{
+	/*所有字标签平分宽度*/
+	flex: 1;
+	overflow: hidden;
+	margin: 0 0.3%;
+	box-shadow:0 20px 30px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: 0.5s;
+}
+.content_list .list:hover{
+	flex: 1 1 50%;
+}
+.content_list .list:hover>img{
+	width: 100%;
+	height: 100%;
+}
+.content_list .list>img{
+	object-fit: cover;
+	width: 100%;
+	height: calc(100% - 100px);
+}
+.content_list .list>p{
+	height: 100%;
+	text-align: center;
+	line-height: 100px;
+}
 /*置顶按钮*/
 .totop{
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
 	position: fixed;
-	right: 20px;
+	right: 50px;
 	bottom: 50px;
 	background-color: #000;
 	color: #fff;
