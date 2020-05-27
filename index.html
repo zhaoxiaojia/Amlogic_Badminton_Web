@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $login_btn = $('.login_btns');
+			var $usr_info = $('.usr_info');
+			var info = $.cookie('username');
+			if(info==undefined){
+				$login_btn.css('display','block');
+				$usr_info.css('display','none');
+			}else{
+				$login_btn.css('display','none');
+				$usr_info.css('display','block');
+				$('#usr_info fl').val()==info.split('-')[0];
+			}
+		});
+	</script>
+	<script type="text/javascript" src="js/slide.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<!-- 页面顶部 -->
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎来到晶晨羽毛球协会</div>
+			<div class="usr_con fr">
+				<ul class="login_btns fl">
+					<li><a href="login.html" id="login">登录</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">注册</a></li>
+				</ul>
+				<div class="usr_info fl">
+					欢迎您：<em>coco</em>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="smash_con">
+		<img src="images/smash.jpg">
+	</div>
+	<!-- 主菜单 -->
+	<div class="center_con">
+		<ul class="main_bar">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">协会公告</a></li>
+			<li><a href="#">赛事聚焦</a></li>
+			<li><a href="#">晶晨之队</a></li>
+			<li><a href="#">全民健身</a></li>
+			<li><a href="#">视频</a></li>
+			<li><a href="#">关于协会</a></li>
+		</ul>
+	</div>
+	<!-- logo -->
+	<div class="center_con2"></div>
+	<!-- 二级菜单 -->
+	<div class="center_con3">
+		<ul class="banner_con">
+			<li><img src="images/banner1.jpg" alt="幻灯片" /></li>
+			<li><img src="images/banner2.jpg" alt="幻灯片" /></li>
+			<li><img src="images/banner3.jpg" alt="幻灯片" /></li>
+			<li><img src="images/banner4.jpg" alt="幻灯片" /></li>
+		</ul>
+		<div class="prev"></div>
+		<div class="next"></div>
+
+		<ul class="points"></ul>
+	</div>
+	<!-- 网页内容 -->
+	<div class="content"></div>
+	<!-- 页面底部 -->
+	<div class="footer">底部</div>
+</body>
+</html>

@@ -42,9 +42,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*左右浮动*/
-fl{
+.fl{
 	float: left;
 }
-fr{
+.fr{
 	float: right;
 }

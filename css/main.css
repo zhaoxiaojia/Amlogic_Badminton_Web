@@ -1,0 +1,173 @@
+body{
+	font-family: 'Open Sans Light';
+	font-size: 14px;
+	letter-spacing: .05em;
+/*	background: url(../images/body_bg.jpg) no-repeat;
+	top: -29px;
+	background-size: cover;*/
+}
+/*页面顶部*/
+.header_con{
+	height: 29px;
+	background-color: #E3E3E3;
+	border-bottom: 1px solid #ddd;
+}
+
+.header{
+	width: 1200px;
+	height: 29px;
+	margin: 0 auto 0;
+}
+
+.welcome{
+	font-size: 12px;
+	color: #666;
+	line-height: 29px;
+}
+
+.usr_info{
+	display: none;
+	font-size: 12px;
+	line-height: 29px;
+	color: #666;
+}
+
+.usr_info em{
+	color: #f80;
+}
+.login_btns{
+	/*display: none;*/
+}
+.login_btns li{
+	float: left;
+	height: 29px;
+}
+
+.login_btns a,.login_btns span{
+	display: block;
+	line-height: 29px;
+	font-size: 12px;
+	color: #666;
+}
+
+.login_btns span{
+	color: #cecece;
+	margin: 0 10px;
+}
+/*主菜单*/
+.center_con{
+	width: 1200px;
+	height: 50px;
+	margin:0 auto;
+	background-color:#000;
+}
+
+.main_bar li{
+	width:14%;
+	float: left;
+	text-align: center;
+	font: normal 16px/50px 'Open Sans Light';
+	cursor: pointer;
+}
+.main_bar li a{
+	color: #fff;
+}
+.smash_con{
+	display: inline-block;
+	width: 150px;
+	height: 180px;
+	overflow: hidden;
+	position: fixed;
+	top: 50px;
+	left: 20px;
+}
+
+@keyframes smash{
+	from{
+		left: 0px;
+	}
+	to{
+		left: -440px;
+	}
+}
+
+.smash_con img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation: smash 1s steps(3) infinite;
+}
+/*logo*/
+.center_con2{
+	width: 1200px;
+	height: 300px;
+	margin: 0 auto;
+	background: url(../images/logo_bg.jpg) no-repeat center -180px;
+	background-size: 100%;
+}
+
+/*幻灯片*/
+.center_con3{
+	width: 1200px;
+	height: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.banner_con{
+	width: 1200px;
+	height: 800px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.banner_con li{
+	width: 1200px;
+	height: 800px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.prev{
+	position: absolute;
+	left: 11px;
+	top:400px;
+	width: 35px;
+	height: 50px;
+	background: url(../images/icons.png) -1px -450px no-repeat;
+	cursor: pointer;
+}
+
+.next{
+	position: absolute;
+	right: 11px;
+	top: 400px;
+	width: 35px;
+	height: 50px;
+	background: url(../images/icons.png) -1px -500px no-repeat;
+	cursor: pointer;
+}
+
+.points{
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	width: 100%;
+	height: 11px;
+	font-size: 0;
+	text-align: center;
+}
+.points li{
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background-color: #9f9f9f;
+	margin: 0 5px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.points .active{
+	background-color: #666;
+}
+
