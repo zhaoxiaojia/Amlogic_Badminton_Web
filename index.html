@@ -1,119 +1,160 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>晶晨羽球官网</title>
-	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="js/jquery.cookie.js"></script>
-	<script type="text/javascript">
-		$(function(){
-			var $login_btn = $('.login_btns');
-			var $usr_info = $('.usr_info');
-			var info = $.cookie('username');
-			if(info==undefined){
-				$login_btn.css('display','block');
-				$usr_info.css('display','none');
-			}else{
-				$login_btn.css('display','none');
-				$usr_info.css('display','block');
-				$('#usr_info fl').val()==info.split('-')[0];
-			}
-			$('.totop').click(function(){
-				$('html,body').animate({'scrollTop':0});
-			});
-			$(window).scroll(function(){
-				var iNum = $(document).scrollTop();
-				if(iNum > 400){
-					$('.totop').fadeIn()
-				}else{
-					$('.totop').fadeOut()
-				}
-			});
-		});
-	</script>
-	<script type="text/javascript" src="js/slide.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>晶晨羽球官网</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/slide.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var $login_btn = $('.login_btns');
+        var $usr_info = $('.usr_info');
+        var info = $.cookie('username');
+        var $totop = $('.totop');
+        $center_con = $('.center_con');
+        $center_con_back = $('.center_con_back');
+
+        if(info==undefined){
+            $login_btn.css('display','block');
+            $usr_info.css('display','none');
+        }else{
+            $login_btn.css('display','none');
+            $usr_info.css('display','block');
+            $('#usr_info fl').val()==info.split('-')[0];
+        }
+
+        $(window).scroll(function(){
+            var iNum = $(document).scrollTop();
+            if (iNum > 10) {
+                console.log('a');
+                $center_con.css({
+                    'position':'fixed',
+                    'top':0,
+                    'left':'50%',
+                    'margin-left':-600,
+                    'z-index':10,
+                });
+                $center_con_back.show()
+            }else{
+                $center_con.css({
+                    'position':'static',
+                    'margin-left':'auto',
+                })
+                $center_con_back.hide();
+            }
+            if(iNum > 400){
+                $totop.fadeIn()
+            }else{
+                $totop.fadeOut()
+            }
+        });
+        $totop.click(function(){
+            $('html,body').animate({'scrollTop':0});
+        });
+    });
+</script>
+
+
 </head>
 <body>
-	<!-- 页面顶部 -->
-	<div class="header_con">
-		<div class="header">
-			<div class="welcome fl">欢迎来到晶晨羽毛球协会官网</div>
-			<div class="usr_con fr">
-				<ul class="login_btns fl">
-					<li><a href="login.html" id="login">登录</a></li>
-					<li><span>|</span></li>
-					<li><a href="#">注册</a></li>
-				</ul>
-				<div class="usr_info fl">
-					欢迎您：<em>coco</em>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="smash_con">
-		<img src="images/smash.png">
-	</div>
-	<div class="totop">↑</div>
+    <!-- 页面顶部 -->
+    <div class="header_con">
+        <div class="header">
+            <div class="welcome fl">欢迎来到晶晨羽毛球协会官网</div>
+            <div class="usr_con fr">
+                <ul class="login_btns fl">
+                    <li><a href="login.html" id="login">登录</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+                <div class="usr_info fl">
+                    欢迎您：<em>coco</em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="smash_con">
+        <img src="images/smash.png">
+    </div>
+    <div class="totop">↑</div>
 
-	<!-- 主菜单 -->
-	<div class="center_con">
-		<ul class="main_bar">
-			<li><a href="#">首页</a></li>
-			<li><a href="#">协会公告</a></li>
-			<li><a href="#">赛事聚焦</a></li>
-			<li><a href="#">晶晨之队</a></li>
-			<li><a href="#">全民健身</a></li>
-			<li><a href="#">视频</a></li>
-			<li><a href="us.html">关于协会</a></li>
-		</ul>
-	</div>
-	<!-- logo -->
-	<div class="center_con2"></div>
-	<!-- 二级菜单 -->
-	<div class="center_con3">
-		<ul class="banner_con">
-			<li><img src="images/banner1.jpg" alt="幻灯片" /></li>
-			<li><img src="images/banner2.jpg" alt="幻灯片" /></li>
-			<li><img src="images/banner3.jpg" alt="幻灯片" /></li>
-			<li><img src="images/banner4.jpg" alt="幻灯片" /></li>
-		</ul>
-		<div class="prev"></div>
-		<div class="next"></div>
+    <!-- 主菜单 -->
+    <div class="center_con">
+        <ul class="main_bar">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">协会公告</a></li>
+            <li><a href="#">赛事聚焦</a></li>
+            <li><a href="#">晶晨之队</a></li>
+            <li><a href="#">全民健身</a></li>
+            <li><a href="#">视频</a></li>
+            <li><a href="us.html">关于协会</a></li>
+        </ul>
+    </div>
+    <div class="center_con_back">####################</div>
+    <!-- logo -->
+    <div class="center_con2"></div>
+    <!-- 二级菜单 -->
+    <div class="center_con3">
+        <ul class="banner_con">
+            <li><img src="images/banner1.jpg" alt="幻灯片"/></li>
+            <li><img src="images/banner2.jpg" alt="幻灯片"/></li>
+            <li><img src="images/banner3.jpg" alt="幻灯片"/></li>
+            <li><img src="images/banner4.jpg" alt="幻灯片"/></li>
+        </ul>
+        <div class="prev_con">
+            <div class="prev"></div>
+        </div>
+        <div class="next_con">
+            <div class="next"></div>
+        </div>
+        <ul class="points"></ul>
+    </div>
+    <!-- 网页内容 -->
+    <div class="content">
+        <ul class="content_list">
+            <li class="list">
+                <img src="images/01.jpg" alt=""/>
+                <p>女单-希尔瓦娜斯</p>
+            </li>
+            <li class="list">
+                <img src="images/02.jpg" alt=""/>
+                <p>女单-阿卡莎</p>
+            </li>
+            <li class="list">
+                <img src="images/03.jpg" alt=""/>
+                <p>女单-Lanaya</p>
+            </li>
+            <li class="list">
+                <img src="images/04.jpg" alt=""/>
+                <p>女双-Crystal Maiden-Lina</p>
+            </li>
+            <li class="list">
+                <img src="images/05.jpg" alt=""/>
+                <p>女双-Crystal Maiden-Windranger-希尔瓦娜斯-Lina</p>
+            </li>
+            <li class="list">
+                <img src="images/06.jpg" alt=""/>
+                <p>混双-Lanaya-King Leoric</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 页面底部 -->
+    <div class="footer">
+        <div class="footer_link">
+            <a href="javascript:;">关于我们</a>
+            <span>|</span>
+            <a href="javascript:;">联系我们</a>
+            <span>|</span>
+            <a href="javascript:;">招聘人才</a>
+            <span>|</span>
+            <a href="javascript:;">友情链接</a>
+            <p>©2020 Baidu (京)-经营性-2017-0020京公网安备11000002000001号</p>
+            <p>电话：021 5888-5888 京ICP证030173号</p>
+        </div>
+    </div>
 
-		<ul class="points"></ul>
-	</div>
-	<!-- 网页内容 -->
-	<div class="content">
-		<ul class="content_list">
-			<li class="list">
-				<img src="images/01.jpg" alt="" />
-				<p>女单-希尔瓦娜斯</p>
-			</li>
-			<li class="list">
-				<img src="images/02.jpg" alt="" />
-				<p>女单-阿卡莎</p>
-			</li>
-			<li class="list">
-				<img src="images/03.jpg" alt="" />
-				<p>女单-Lanaya</p>
-			</li>
-			<li class="list">
-				<img src="images/04.jpg" alt="" />
-				<p>女双-Crystal Maiden-Lina</p>
-			</li>
-			<li class="list">
-				<img src="images/05.jpg" alt="" />
-				<p>女双-Crystal Maiden-Windranger-希尔瓦娜斯-Lina</p>
-			</li>
-			<li class="list">
-				<img src="images/06.jpg" alt="" />
-				<p>混双-Lanaya-King Leoric</p>
-			</li>
-		</ul>
-	</div>
-	<!-- 页面底部 -->
-	<div class="footer">底部</div>
 </body>
 </html>

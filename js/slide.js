@@ -28,19 +28,17 @@ $(function(){
 	});
 
 	// 点击 < button时滚动幻灯片 并改变圆点样式
-	$prev.click(function(){
+	$('.prev_con').click(function (){
 		iNextli --;
 		move()
 		$pointsli.eq(iNextli).addClass('active').siblings().removeClass('active');
 	});
-
 	// 点击 > button时滚动幻灯片 并改变圆点样式
-	$next.click(function(){
+	$('.next_con').click(function (){
 		iNextli ++;
 		move();
 		$pointsli.eq(iNextli).addClass('active').siblings().removeClass('active');
 	});
-
 	// 移动幻灯片
 	function move(){
 		// 第一张幻灯片往前时
