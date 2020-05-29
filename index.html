@@ -16,7 +16,18 @@
         var $totop = $('.totop');
         $center_con = $('.center_con');
         $center_con_back = $('.center_con_back');
-
+        var $navibar = $('.main_bar li');
+        var aContainer = new Array();
+        // 设置滚动条不占宽度
+        $('html').css('width',$(window).width())
+        $('.container').each(function(key){
+            aContainer[key] = $(this)
+        })
+        aContainer[0].addClass('show');
+        $navibar.click(function(){
+            iNow = $(this).index()
+            aContainer[iNow].addClass('show').siblings().removeClass('show');
+        });
         if(info==undefined){
             $login_btn.css('display','block');
             $usr_info.css('display','none');
@@ -28,12 +39,12 @@
 
         $(window).scroll(function(){
             var iNum = $(document).scrollTop();
-            if (iNum > 10) {
-                console.log('a');
+            if (iNum > 50) {
+                // alert(document.body.offsetWidth-document.body.clientHeight)
                 $center_con.css({
                     'position':'fixed',
-                    'top':0,
                     'left':'50%',
+                    'top':0,
                     'margin-left':-600,
                     'z-index':10,
                 });
@@ -93,54 +104,61 @@
             <li><a href="us.html">关于协会</a></li>
         </ul>
     </div>
-    <div class="center_con_back">####################</div>
-    <!-- logo -->
-    <div class="center_con2"></div>
-    <!-- 二级菜单 -->
-    <div class="center_con3">
-        <ul class="banner_con">
-            <li><img src="images/banner1.jpg" alt="幻灯片"/></li>
-            <li><img src="images/banner2.jpg" alt="幻灯片"/></li>
-            <li><img src="images/banner3.jpg" alt="幻灯片"/></li>
-            <li><img src="images/banner4.jpg" alt="幻灯片"/></li>
-        </ul>
-        <div class="prev_con">
-            <div class="prev"></div>
+    <div class="center_con_back"></div>
+    <div class="container">
+        <!-- logo -->
+        <div class="center_con2"></div>
+        <!-- 二级菜单 -->
+        <div class="center_con3">
+            <ul class="banner_con">
+                <li><img src="images/banner1.jpg" alt="幻灯片"/></li>
+                <li><img src="images/banner2.jpg" alt="幻灯片"/></li>
+                <li><img src="images/banner3.jpg" alt="幻灯片"/></li>
+                <li><img src="images/banner4.jpg" alt="幻灯片"/></li>
+            </ul>
+            <div class="prev_con">
+                <div class="prev"></div>
+            </div>
+            <div class="next_con">
+                <div class="next"></div>
+            </div>
+            <ul class="points"></ul>
         </div>
-        <div class="next_con">
-            <div class="next"></div>
+        <!-- 网页内容 -->
+        <div class="content">
+            <ul class="content_list">
+                <li class="list">
+                    <img src="images/01.jpg" alt=""/>
+                    <p>女单-希尔瓦娜斯</p>
+                </li>
+                <li class="list">
+                    <img src="images/02.jpg" alt=""/>
+                    <p>女单-阿卡莎</p>
+                </li>
+                <li class="list">
+                    <img src="images/03.jpg" alt=""/>
+                    <p>女单-Lanaya</p>
+                </li>
+                <li class="list">
+                    <img src="images/04.jpg" alt=""/>
+                    <p>女双-Crystal Maiden-Lina</p>
+                </li>
+                <li class="list">
+                    <img src="images/05.jpg" alt=""/>
+                    <p>女双-Crystal Maiden-Windranger-希尔瓦娜斯-Lina</p>
+                </li>
+                <li class="list">
+                    <img src="images/06.jpg" alt=""/>
+                    <p>混双-Lanaya-King Leoric</p>
+                </li>
+            </ul>
         </div>
-        <ul class="points"></ul>
     </div>
-    <!-- 网页内容 -->
-    <div class="content">
-        <ul class="content_list">
-            <li class="list">
-                <img src="images/01.jpg" alt=""/>
-                <p>女单-希尔瓦娜斯</p>
-            </li>
-            <li class="list">
-                <img src="images/02.jpg" alt=""/>
-                <p>女单-阿卡莎</p>
-            </li>
-            <li class="list">
-                <img src="images/03.jpg" alt=""/>
-                <p>女单-Lanaya</p>
-            </li>
-            <li class="list">
-                <img src="images/04.jpg" alt=""/>
-                <p>女双-Crystal Maiden-Lina</p>
-            </li>
-            <li class="list">
-                <img src="images/05.jpg" alt=""/>
-                <p>女双-Crystal Maiden-Windranger-希尔瓦娜斯-Lina</p>
-            </li>
-            <li class="list">
-                <img src="images/06.jpg" alt=""/>
-                <p>混双-Lanaya-King Leoric</p>
-            </li>
-        </ul>
-    </div>
+    <div class="container">协会公告</div>
+    <div class="container">赛事聚焦</div>
+    <div class="container">晶晨之队</div>
+    <div class="container">全名健身</div>
+    <div class="container">视频</div>
     <!-- 页面底部 -->
     <div class="footer">
         <div class="footer_link">
